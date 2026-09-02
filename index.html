@@ -1,122 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fa63cb" />
   <title>Pour Rvphv 👾♥️</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Courgette&family=Permanent+Marker&family=Dancing+Script:wght@700&family=Indie+Flower&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@500;700&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Permanent+Marker&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div id="app">
-    <!-- Section 0: Intro / Hero -->
-    <section class="section hero vaporwave" id="section-0">
-      <div class="hero-content">
-        <h1 class="glitch" data-text="Raphaela">Raphaela</h1>
-        <p class="subtitle">Rvphv 👾♥️</p>
-        <p class="scroll-hint">↓ Scrolle pour découvrir ↓</p>
-      </div>
-      <div class="vaporwave-bg">
-        <div class="grid-floor"></div>
-        <div class="sun"></div>
-        <div class="stars"></div>
-      </div>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar"><a href="#hero">RVPHV <span>👾♥️</span></a><p>scroll to open</p></header>
+  <main>
+    <section class="hero panel" id="hero">
+      <div class="scanlines" aria-hidden="true"></div>
+      <p class="kicker">an internet love letter // 2026</p>
+      <h1 data-text="Raphaela">Raphaela</h1>
+      <p class="alias">a.k.a. <strong>Rvphv</strong> <span>👾♥️</span></p>
+      <div class="hero-orbit orbit-one">LOVE.exe</div><div class="hero-orbit orbit-two">☆ 143 ☆</div>
+      <div class="hero-grid" aria-hidden="true"></div><div class="hero-sun" aria-hidden="true"></div>
+      <a class="scroll-cta" href="#messages">ouvrir le message <span>↓</span></a>
     </section>
-
-    <!-- Section 1: Messages parallaxe / carrousel -->
-    <section class="section messages graffiti" id="section-1">
-      <div class="section-title">Pour toi, Rvphv</div>
-      <div class="message-carousel">
-        <div class="message-slide">
-          <p class="message-text">Salut Rvphv 👾♥️, j'ai pensé à toi aujourd'hui et j'ai vu que dans tes pourtoi t'aimais ce genre de site</p>
-        </div>
-        <div class="message-slide">
-          <p class="message-text">Alors, déjà t'es super belle</p>
-        </div>
-        <div class="message-slide">
-          <p class="message-text">T'as des goûts musicaux en or</p>
-        </div>
-        <div class="message-slide">
-          <p class="message-text">En plus du dessin grave bien, j'ai vu le portrait que t'as réalisé aux activités péri-academiques à Pigier</p>
-        </div>
-        <div class="message-slide">
-          <p class="message-text">T'es la plus drô¬®¬le au faite</p>
-        </div>
+    <section class="messages panel" id="messages">
+      <div class="section-label">01 / GRAFFITI CAROUSEL</div>
+      <p class="sticker sticker-one">NO CAP!</p><p class="sticker sticker-two">100%</p>
+      <div class="message-stage" aria-live="polite">
+        <article class="slide active"><span class="slide-index">01</span><h2>Salut Rvphv <span>👾♥️</span></h2><p>J'ai pensé à toi aujourd'hui et j'ai vu que dans tes pourtoi t'aimais ce genre de site.</p></article>
+        <article class="slide"><span class="slide-index">02</span><h2>Déjà…</h2><p>T'es super belle.</p></article>
+        <article class="slide"><span class="slide-index">03</span><h2>Et tes vibes ?</h2><p>T'as des goûts musicaux en or. Vraiment, playlist certifiée.</p></article>
+        <article class="slide"><span class="slide-index">04</span><h2>Ton art 🎨</h2><p>Tu dessines grave bien. J'ai vu le portrait que t'as réalisé à l'activité péri-académique à Pigier — lourd.</p></article>
+        <article class="slide"><span class="slide-index">05</span><h2>Le meilleur plot twist</h2><p>T'es la plus drôle au fait. C'est clairement pas négociable.</p></article>
       </div>
-      <div class="carousel-nav">
-        <button class="nav-btn prev">←</button>
-        <div class="dots"></div>
-        <button class="nav-btn next">→</button>
-      </div>
+      <div class="carousel-controls"><button id="prev" aria-label="Message précédent">←</button><div id="dots" class="dots"></div><button id="next" aria-label="Message suivant">→</button></div>
     </section>
-
-    <!-- Section 2: Mixed Media -->
-    <section class="section mixed-media" id="section-2">
-      <div class="section-title">Toi, en plusieurs couches</div>
-      <div class="collage-container">
-        <div class="collage-item item-1">🎨</div>
-        <div class="collage-item item-2">🎵</div>
-        <div class="collage-item item-3">✨</div>
-        <div class="collage-item item-4">💖</div>
-        <div class="collage-item item-5">👾</div>
-      </div>
+    <section class="mixed panel" id="mixed">
+      <div class="section-label">02 / MIXED MEDIA</div>
+      <div class="collage"><div class="paper paper-a"><span class="tape"></span><p>cute<br>but<br>chaotic</p></div><div class="scribble">you<br>are<br>art.</div><div class="disc">♪</div><div class="starburst">ICON<br>ENERGY</div><div class="note">un peu de musique,<br>beaucoup de talent,<br>et toi au milieu.</div><div class="stamp">RVPHV<br>APPROVED</div></div>
     </section>
-
-    <!-- Section 3: Coquette -->
-    <section class="section coquette" id="section-3">
-      <div class="section-title">Douceur & Tendresse</div>
-      <div class="coquette-content">
-        <div class="ribbon-decoration"></div>
-        <p class="coquette-text">Chaque moment avec toi est comme une page de roman doux et pétillant</p>
-        <div class="hearts-float">
-          <span>💕</span><span>💗</span><span>💖</span><span>💘</span><span>💝</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 4: Scrapbook -->
-    <section class="section scrapbook" id="section-4">
-      <div class="section-title">Nos souvenirs, en scrapbook</div>
-      <div class="scrapbook-page">
-        <div class="polaroid photo-1">
-          <div class="photo-frame">📸</div>
-          <div class="photo-caption">Toi & ton art</div>
-        </div>
-        <div class="polaroid photo-2">
-          <div class="photo-frame">🎶</div>
-          <div class="photo-caption">Tes vibes musicales</div>
-        </div>
-        <div class="polaroid photo-3">
-          <div class="photo-frame">😂</div>
-          <div class="photo-caption">Ton humour</div>
-        </div>
-        <div class="washi-tape tape-1"></div>
-        <div class="washi-tape tape-2"></div>
-        <div class="handwritten-note">"Rvphv, t'es unique"</div>
-      </div>
-    </section>
-
-    <!-- Section 5: Calendrier de disponibilité -->
-    <section class="section availability" id="section-5">
-      <div class="section-title">Quand est-ce qu'on se voit ?</div>
-      <p class="availability-intro">Dis-moi tes disponibilités cette semaine :</p>
-      <form id="availability-form">
-        <div class="calendar-grid">
-          <!-- Généré en JS -->
-        </div>
-        <button type="submit" class="submit-btn">Envoyer mes disponibilités</button>
-      </form>
-      <div id="form-feedback" class="form-feedback"></div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <p>Fait avec 💖 pour Rvphv</p>
-    </footer>
-  </div>
-
-  <script type="module" src="main.js"></script>
-</body>
-</html>
+    <section class="coquette panel" id="coquette"><div class="section-label">03 / COQUETTE MODE</div><div class="coquette-card"><span class="bow">୨୧</span><p class="tiny">dear Raphaela,</p><h2>Tu rends tout<br><em>plus joli.</em></h2><p>Un peu de rose, des petits cœurs et une note pour te dire que tu es spéciale.</p><span class="signature">avec affection ♡</span><div class="pearl pearl-a"></div><div class="pearl pearl-b"></div></div></section>
+    <section class="scrapbook panel" id="scrapbook"><div class="section-label">04 / SCRAPBOOK FILES</div><div class="scrap-grid"><figure class="polaroid tilt-left"><div class="emoji-photo">🎨</div><figcaption>Ton côté artiste</figcaption></figure><figure class="polaroid tilt-right"><div class="emoji-photo">🎧</div><figcaption>Les goûts en or</figcaption></figure><figure class="polaroid tilt-center"><div class="emoji-photo">😂</div><figcaption>L'humour imbattable</figcaption></figure><p class="scrap-note">petite collection de raisons pour lesquelles<br>t'es vraiment une personne incroyable ✦</p></div></section>
+    <section class="availability panel" id="availability"><div class="section-label">05 / LET'S MAKE PLANS</div><div class="availability-heading"><p>Question très importante :</p><h2>Tu es dispo<br>quand pour qu'on<br>se voie ? <span>♥</span></h2><p class="small">Choisis tous les créneaux qui te conviennent.</p></div><form id="availability-form"><div class="calendar" id="calendar"></div><label class="message-field">Tu peux ajouter un petit mot<input type="text" name="message" maxlength="150" placeholder="ex: samedi après-midi c'est parfait ✨" /></label><button type="submit">Valider mes dispos <span>→</span></button><p class="local-note">Pour le moment, tes choix restent enregistrés seulement sur cet appareil.</p></form><div class="success" id="success" hidden><span>✦</span><h3>Parfait, c'est noté !</h3><p>J'ai hâte qu'on se voie, Rvphv ♥</p></div></section>
+  </main><footer>made with a lot of <span>♥</span> for rvphv</footer><script src="main.js"></script>
+</body></html>
